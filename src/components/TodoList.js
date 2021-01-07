@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 function TodoList() {
-  return <div></div>;
+  const [inputText, setImputText] = useState("");
+  return (
+    <div className="todo-container">
+      <ul className="todo-list"></ul>
+    </div>
+  );
 }
 
 export default TodoList;
