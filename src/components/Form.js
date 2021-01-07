@@ -1,10 +1,17 @@
 import React from "react";
 
-const Form = () => {
+const Form = ({ setImputText }) => {
+  const InputTextHandler = (e) => {
+    console.log(e.target.value);
+    setImputText(e.target.value);
+  };
+  const submitTodoHandler = () => {
+    console.log(e);
+  };
   return (
     <div>
       <form>
-        <input type="text" className="todo-imput" />
+        <input onChange={InputTextHandler} type="text" className="todo-imput" />
         <button className="todo-button" type="submit">
           <i className="fas fa-plus-square"></i>
         </button>
