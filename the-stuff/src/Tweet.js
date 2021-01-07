@@ -11,4 +11,6 @@ function Tweet({ name, message }) {
   );
 }
 
+// remember to switch your branch to main always look for 'origin https://github.com/samuray90/"specific-project'
+
 export default Tweet;
